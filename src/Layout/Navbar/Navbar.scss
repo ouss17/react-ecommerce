@@ -1,5 +1,10 @@
 .navbarPrincipale{
     // background:green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
 
 
     .navbarPrincipaleWrapper{
@@ -7,25 +12,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // background:purple;
-
         max-width:1600px;
-
         margin-left:auto;
         margin-right:auto;
-        // background:green;
         position:relative;
-    
         padding:0 27px;
-    
-        @media screen and (min-width:450px){padding:0 35px;}
-        @media screen and (min-width:750px){padding:0 42px;}
+
+        @media screen and (min-width:450px){
+            padding:0 35px;
+        }
+
+        @media screen and (min-width:750px){
+            padding:0 42px;
+        }
+
     }
 
     .logo{
-        // background:pink;
         display:flex;
         align-items: center;
+
         img{
             width:28px;
         }
@@ -38,14 +44,13 @@
             letter-spacing: 1.2px;
             padding-top:3px;
             color:rgb(41, 41, 41);
-            // background:red;
             line-height: auto;
         }
+
     }
 
 
     .buttonMenu{
-        // background:orange;
         display:flex;
 
         svg{
@@ -56,7 +61,6 @@
             &:first-child{
                 margin-left:0;
             }
-
             
         }
 
@@ -65,6 +69,7 @@
             @media screen and (min-width:992px){
                 display:none;
             }
+
         }
 
 
@@ -75,8 +80,6 @@
     .desktopMenu{
         display:none;
         position:absolute;
-        // background:purple;
-
         left:50%;
         transform:translateX(-50%);
 
@@ -88,6 +91,7 @@
         ul{
             list-style-type: none;
             display: flex;
+
             li{
                 display:block;
                 margin-left:30px;
@@ -107,14 +111,20 @@
                 &:first-child{
                     margin-left:0;
                 }
+
             }
+
             .secondNav{
                 @media screen and (min-width:750px){
                     display: none;
                 }
+
             }
+
         }
+
     }
+
 }
 
 ul.secondNav {
@@ -145,7 +155,7 @@ ul.secondNav {
             top: 1.5%;
             font-size: 20px;
         }
-        
+
         li.scnd-nav-obj {
             padding: 15px;
             width: 90%;
@@ -153,6 +163,7 @@ ul.secondNav {
             justify-content: space-between;
             font-size: 1.6em;
         }
+        
 }
 
 

@@ -9,8 +9,8 @@ const Navbar = () => {
     const [right, setRight] = useState(-100000)
 
     const showSecondMenu = () => {
-            setRight(0);
-            setEvent("auto");
+        setRight(0);
+        setEvent("auto");
     }
 
     const closeLogo = () => {
@@ -59,10 +59,10 @@ const Navbar = () => {
                         <img src={logoIMG} alt="" />
                         <h1>SHOPIZ</h1>
                     </div>
-                    <li className="scnd-nav-obj" id="news2"><span>Promo</span> <i class="fas fa-chevron-right"></i></li>
-                    <li className="scnd-nav-obj" id="woman2"><span>Chaussures</span> <i class="fas fa-chevron-right"></i></li>
-                    <li className="scnd-nav-obj" id="child2"><span>Bagues</span> <i class="fas fa-chevron-right"></i></li>
-                    <li className="scnd-nav-obj" id="man2"><span>Sacs à main</span> <i class="fas fa-chevron-right"></i></li>
+                    <li className="scnd-nav-obj" id="news2"><span>Promo</span> <i className="fas fa-chevron-right"></i></li>
+                    <li className="scnd-nav-obj" id="woman2"><span>Chaussures</span> <i className="fas fa-chevron-right"></i></li>
+                    <li className="scnd-nav-obj" id="child2"><span>Bagues</span> <i className="fas fa-chevron-right"></i></li>
+                    <li className="scnd-nav-obj" id="man2"><span>Sacs à main</span> <i className="fas fa-chevron-right"></i></li>
                 </ul>
 
 
