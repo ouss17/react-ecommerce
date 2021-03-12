@@ -1,37 +1,38 @@
 .navbarPrincipale{
     // background:green;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
 
+    background:white;
+    z-index: 100000;
 
     .navbarPrincipaleWrapper{
         height:90px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         max-width:1600px;
+
         margin-left:auto;
         margin-right:auto;
+        // background:green;
         position:relative;
+    
         padding:0 27px;
+    
+        @media screen and (min-width:450px){padding:0 35px;}
+        @media screen and (min-width:750px){padding:0 42px;}
 
-        @media screen and (min-width:450px){
-            padding:0 35px;
-        }
-
-        @media screen and (min-width:750px){
-            padding:0 42px;
-        }
-
+        @media screen and (min-width:992px){height:72px;}
     }
 
     .logo{
+        // background:pink;
         display:flex;
         align-items: center;
-
         img{
             width:28px;
         }
@@ -44,13 +45,14 @@
             letter-spacing: 1.2px;
             padding-top:3px;
             color:rgb(41, 41, 41);
+            // background:red;
             line-height: auto;
         }
-
     }
 
 
     .buttonMenu{
+        // background:orange;
         display:flex;
 
         svg{
@@ -61,7 +63,37 @@
             &:first-child{
                 margin-left:0;
             }
+
             
+        }
+
+        .basket-course{
+            position: absolute;
+            right: -110px;
+            padding: 30px;
+            max-height: 130px;
+            width: 175px;
+            background-color: rgb(87, 226, 110);
+            color: rgb(34, 97, 139);
+            transition: all 500ms;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            .table{
+                text-align: center;
+            }
+        }
+
+        .basket-course::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        .basket-course::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .basket-course::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
         }
 
         .buttonMenuMobile{
@@ -69,7 +101,6 @@
             @media screen and (min-width:992px){
                 display:none;
             }
-
         }
 
 
@@ -80,6 +111,8 @@
     .desktopMenu{
         display:none;
         position:absolute;
+        // background:rgb(168, 83, 168);
+
         left:50%;
         transform:translateX(-50%);
 
@@ -91,7 +124,6 @@
         ul{
             list-style-type: none;
             display: flex;
-
             li{
                 display:block;
                 margin-left:30px;
@@ -111,21 +143,15 @@
                 &:first-child{
                     margin-left:0;
                 }
-
             }
-
             .secondNav{
                 @media screen and (min-width:750px){
                     display: none;
                 }
-
-            }
-
         }
-
     }
-
 }
+
 
 ul.secondNav {
     position: absolute;
@@ -165,6 +191,4 @@ ul.secondNav {
         }
         
 }
-
-
-
+}
