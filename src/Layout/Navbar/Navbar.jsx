@@ -91,7 +91,7 @@ const Navbar = ({ panier}) => {
                     <div className="basket-course"
                         style={{
                             top: top,
-                            pointerEvents: event2
+                            pointerEvents: event
                         }}>
                         <div className="basketContent">
                             {basketContent()}
@@ -110,9 +110,9 @@ const Navbar = ({ panier}) => {
                     </ul>
                 </nav>
 
-                <ul className="secondNav" style={{ right: right, pointerEvents: event }}
+                <ul className="secondNav" style={{ right: right, pointerEvents: event2 }}
                 >
-                    <span className="cross" onClick={closeLogo}>X</span>
+                    <span className="cross" onClick={closeLogo} >X</span>
                     <div className="logo">
                         <img src={logoIMG} alt="" />
                         <h1>SHOPIZ</h1>
